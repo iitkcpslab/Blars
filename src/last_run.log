@@ -1,0 +1,1737 @@
+*************************
+select 1 for Automatic transmission
+select 2 for Abstract furl control
+select 3 for Neural Network based maglev
+select 4 for Anti Lock braking system
+select 5 for helicopter
+*******************************
+enter the model number1
+enter the specification number13
+---------------------------------------
+selected model is1
+---------------------------------------
+--------------------------------------
+selected specification is phi13
+---------------------------------------
+---------------------------------------
+flattening the modelAutotrans_shift
+---------------------------------------
+#############################
+time for flattening
+Elapsed time is 6.880298 seconds.
+Initializing Breach from folder /home/nikhil/BLARS/breach...
+Found var Iei in model workspace used by Autotrans_shift_expanded_breach/engine+impellerinertia.
+Found var Iv in model workspace used by Autotrans_shift_expanded_breach/Vehicle
+Inertia.
+Found var Kfactor in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found Kfactor, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var N20 in model workspace used by Autotrans_shift_expanded_breach/Wheel
+Speed.
+Found var Rfd in model workspace used by Autotrans_shift_expanded_breach/Final
+Drive
+Ratio1.
+Found var Rw in model workspace used by Autotrans_shift_expanded_breach/LinearSpeed.
+Found var TWAIT in model workspace used by Autotrans_shift_expanded_breach/ShiftLogic.
+Found var Torkratio in model workspace used by Autotrans_shift_expanded_breach/TorqueRatio.
+Found Torkratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downtab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downtab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var emap in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found emap, 10 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var nevec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found nevec, 1 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var rload0 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var rload2 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var speedratio in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found speedratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var thvec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found thvec, 10 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var uptab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found uptab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var upth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found upth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+
+START OPTIMIZATION METAHEURISTICS
+
+     TEST CORNERS
+
+ Running 80 corners
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        1.2               [+2.00000e+00]     (+2.00000e+00)
+         2                        2.0               [+2.00000e+00]     (+2.00000e+00)
+         3                        2.8               [+2.00000e+00]     (+2.00000e+00)
+         4                        3.6               [+2.00000e+00]     (+2.00000e+00)
+         5                        4.2               [+2.00000e+00]     (+2.00000e+00)
+         6                        4.7               [+2.00000e+00]     (+2.00000e+00)
+         7                        5.3               [+2.00000e+00]     (+2.00000e+00)
+         8                        6.0               [+2.00000e+00]     (+2.00000e+00)
+         9                        6.6               [+2.00000e+00]     (+2.00000e+00)
+        10                        7.1               [+2.00000e+00]     (+2.00000e+00)
+        11                        7.7               [+2.00000e+00]     (+2.00000e+00)
+        12                        8.2               [+2.00000e+00]     (+2.00000e+00)
+        13                        8.8               [+2.00000e+00]     (+2.00000e+00)
+        14                        9.3               [+2.00000e+00]     (+2.00000e+00)
+        15                        9.9               [+2.00000e+00]     (+2.00000e+00)
+        16                       10.4               [+2.00000e+00]     (+2.00000e+00)
+        17                       11.0               [+2.00000e+00]     (+2.00000e+00)
+        18                       11.6               [+2.00000e+00]     (+2.00000e+00)
+        19                       12.1               [+2.00000e+00]     (+2.00000e+00)
+        20                       12.6               [+2.00000e+00]     (+2.00000e+00)
+        21                       13.2               [+2.00000e+00]     (+2.00000e+00)
+        22                       13.7               [+2.00000e+00]     (+2.00000e+00)
+        23                       14.2               [+2.00000e+00]     (+2.00000e+00)
+        24                       14.8               [+2.00000e+00]     (+2.00000e+00)
+        25                       15.3               [+2.00000e+00]     (+2.00000e+00)
+        26                       15.9               [+2.00000e+00]     (+2.00000e+00)
+        27                       16.5               [+2.00000e+00]     (+2.00000e+00)
+        28                       17.0               [+2.00000e+00]     (+2.00000e+00)
+        29                       17.6               [+2.00000e+00]     (+2.00000e+00)
+        30                       18.1               [+2.00000e+00]     (+2.00000e+00)
+        31                       18.7               [+2.00000e+00]     (+2.00000e+00)
+        32                       19.2               [+2.00000e+00]     (+2.00000e+00)
+        33                       19.8               [+2.00000e+00]     (+2.00000e+00)
+        34                       20.3               [+2.00000e+00]     (+2.00000e+00)
+        35                       20.9               [+2.00000e+00]     (+2.00000e+00)
+        36                       21.5               [+2.00000e+00]     (+2.00000e+00)
+        37                       22.1               [+2.00000e+00]     (+2.00000e+00)
+        38                       22.7               [+2.00000e+00]     (+2.00000e+00)
+        39                       23.3               [+2.00000e+00]     (+2.00000e+00)
+        40                       23.9               [+2.00000e+00]     (+2.00000e+00)
+        41                       24.4               [+2.00000e+00]     (+2.00000e+00)
+        42                       24.9               [+2.00000e+00]     (+2.00000e+00)
+        43                       25.5               [+2.00000e+00]     (+2.00000e+00)
+        44                       26.0               [+2.00000e+00]     (+2.00000e+00)
+        45                       26.6               [+2.00000e+00]     (+2.00000e+00)
+        46                       27.1               [+2.00000e+00]     (+2.00000e+00)
+        47                       27.6               [+2.00000e+00]     (+2.00000e+00)
+        48                       28.2               [+2.00000e+00]     (+2.00000e+00)
+        49                       28.7               [+2.00000e+00]     (+2.00000e+00)
+        50                       29.3               [+2.00000e+00]     (+2.00000e+00)
+        51                       29.8               [+2.00000e+00]     (+2.00000e+00)
+        52                       30.3               [+2.00000e+00]     (+2.00000e+00)
+        53                       31.0               [+2.00000e+00]     (+2.00000e+00)
+        54                       31.5               [+2.00000e+00]     (+2.00000e+00)
+        55                       32.1               [+2.00000e+00]     (+2.00000e+00)
+        56                       32.6               [+2.00000e+00]     (+2.00000e+00)
+        57                       33.2               [+2.00000e+00]     (+2.00000e+00)
+        58                       33.7               [+2.00000e+00]     (+2.00000e+00)
+        59                       34.2               [+2.00000e+00]     (+2.00000e+00)
+        60                       34.8               [+2.00000e+00]     (+2.00000e+00)
+        61                       35.4               [+2.00000e+00]     (+2.00000e+00)
+        62                       35.9               [+2.00000e+00]     (+2.00000e+00)
+        63                       36.5               [+2.00000e+00]     (+2.00000e+00)
+        64                       37.0               [+2.00000e+00]     (+2.00000e+00)
+        65                       37.5               [+2.00000e+00]     (+2.00000e+00)
+        66                       38.1               [+2.00000e+00]     (+2.00000e+00)
+        67                       38.6               [+2.00000e+00]     (+2.00000e+00)
+        68                       39.1               [+2.00000e+00]     (+2.00000e+00)
+        69                       39.7               [+2.00000e+00]     (+2.00000e+00)
+        70                       40.2               [+2.00000e+00]     (+2.00000e+00)
+        71                       40.8               [+2.00000e+00]     (+2.00000e+00)
+        72                       41.3               [+2.00000e+00]     (+2.00000e+00)
+        73                       41.9               [+2.00000e+00]     (+2.00000e+00)
+        74                       42.4               [+2.00000e+00]     (+2.00000e+00)
+        75                       42.9               [+2.00000e+00]     (+2.00000e+00)
+        76                       43.5               [+2.00000e+00]     (+2.00000e+00)
+        77                       44.0               [+2.00000e+00]     (+2.00000e+00)
+        78                       44.6               [+2.00000e+00]     (+2.00000e+00)
+        79                       45.1               [+2.00000e+00]     (+2.00000e+00)
+        80                       45.6               [+2.00000e+00]     (+2.00000e+00)
+Best value found during corners phase: 2 with
+        dt_u0 = 0.1
+        dt_u1 = 0.1
+        dt_u2 = 0.1
+        dt_u3 = 0.1
+        throttle_u0 = 0
+        throttle_u2 = 0
+        brake_u1 = 0
+        brake_u3 = 0
+
+
+TEST QUASI-RANDOM SAMPLES
+
+
+++++++++++++++++++++++++++++++++++++++++++++
+Running 80 quasi-random samples with seed 1
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+        81                       46.2               [+1.00000e+00]     (+1.00000e+00)
+        82                       46.8               [+2.88091e-01]     (+2.88091e-01)
+        83                       47.3               [+3.85960e-01]     (+2.88091e-01)
+        84                       47.9               [+1.00000e+00]     (+2.88091e-01)
+        85                       48.4               [+1.00000e+00]     (+2.88091e-01)
+        86                       49.0               [+1.00000e+00]     (+2.88091e-01)
+        87                       49.5               [+1.00000e+00]     (+2.88091e-01)
+        88                       50.1               [+2.00000e+00]     (+2.88091e-01)
+        89                       50.6               [+2.00000e+00]     (+2.88091e-01)
+        90                       51.1               [+2.00000e+00]     (+2.88091e-01)
+        91                       51.7               [+2.00000e+00]     (+2.88091e-01)
+        92                       52.2               [+1.00000e+00]     (+2.88091e-01)
+        93                       52.8               [+1.00000e+00]     (+2.88091e-01)
+        94                       53.3               [+1.00000e+00]     (+2.88091e-01)
+        95                       53.8               [+1.00000e+00]     (+2.88091e-01)
+        96                       54.4               [+1.00000e+00]     (+2.88091e-01)
+        97                       54.9               [+1.00000e+00]     (+2.88091e-01)
+        98                       55.4               [+2.00000e+00]     (+2.88091e-01)
+        99                       56.0               [-9.49741e-01]     (-9.49741e-01)
+
+END OPTIMIZATION METAHEURISTICS
+Falsified with obj = -0.949741
+
+ ---- Best value -0.949741 found with
+        dt_u0 = 1.64687
+        dt_u1 = 7.43333
+        dt_u2 = 1.684
+        dt_u3 = 8.9898
+        throttle_u0 = 82.6446
+        throttle_u2 = 54.4379
+        brake_u1 = 58.4775
+        brake_u3 = 18.0055
+
+#############################
+time for falsification
+Elapsed time is 62.753119 seconds.
+    'gear'    'speed'
+
+
+ans =
+
+    'alw (not ((gear3) and (speed_low)))'
+
+the suspected signals are
+    'lin_speed'
+    'Eii'
+    'l8'
+    'drive_ratio'
+    'Nin'
+    'RPM'
+    'l1'
+    'l18'
+    'turbinetorque'
+
+#############################
+time for bug localisation
+Elapsed time is 16.299268 seconds.
+------------------ITERATION
+     2
+
+----------------------------
+#####
+     1
+
+    5.0240
+
+changing parameter to
+    5.0240
+
+Found var Iei in model workspace used by Autotrans_shift_expanded_breach/engine+impellerinertia.
+Found var Iv in model workspace used by Autotrans_shift_expanded_breach/Vehicle
+Inertia.
+Found var Kfactor in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found Kfactor, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var N20 in model workspace used by Autotrans_shift_expanded_breach/Wheel
+Speed.
+Found var Rfd in model workspace used by Autotrans_shift_expanded_breach/Final
+Drive
+Ratio1.
+Found var TWAIT in model workspace used by Autotrans_shift_expanded_breach/ShiftLogic.
+Found var Torkratio in model workspace used by Autotrans_shift_expanded_breach/TorqueRatio.
+Found Torkratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downtab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downtab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var emap in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found emap, 10 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var nevec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found nevec, 1 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var rload0 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var rload2 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var speedratio in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found speedratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var thvec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found thvec, 10 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var uptab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found uptab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var upth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found upth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+
+START OPTIMIZATION METAHEURISTICS
+
+     TEST CORNERS
+
+ Running 80 corners
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.6               [+2.00000e+00]     (+2.00000e+00)
+         2                        1.1               [+2.00000e+00]     (+2.00000e+00)
+         3                        1.7               [+2.00000e+00]     (+2.00000e+00)
+         4                        2.2               [+2.00000e+00]     (+2.00000e+00)
+         5                        2.8               [+2.00000e+00]     (+2.00000e+00)
+         6                        3.3               [+2.00000e+00]     (+2.00000e+00)
+         7                        3.9               [+2.00000e+00]     (+2.00000e+00)
+         8                        4.4               [+2.00000e+00]     (+2.00000e+00)
+         9                        5.0               [+2.00000e+00]     (+2.00000e+00)
+        10                        5.5               [+2.00000e+00]     (+2.00000e+00)
+        11                        6.1               [+2.00000e+00]     (+2.00000e+00)
+        12                        6.6               [+2.00000e+00]     (+2.00000e+00)
+        13                        7.1               [+2.00000e+00]     (+2.00000e+00)
+        14                        7.7               [+2.00000e+00]     (+2.00000e+00)
+        15                        8.2               [+2.00000e+00]     (+2.00000e+00)
+        16                        8.8               [+2.00000e+00]     (+2.00000e+00)
+        17                        9.3               [+2.00000e+00]     (+2.00000e+00)
+        18                        9.9               [+2.00000e+00]     (+2.00000e+00)
+        19                       10.4               [+2.00000e+00]     (+2.00000e+00)
+        20                       10.9               [+2.00000e+00]     (+2.00000e+00)
+        21                       11.5               [+2.00000e+00]     (+2.00000e+00)
+        22                       12.0               [+2.00000e+00]     (+2.00000e+00)
+        23                       12.6               [+2.00000e+00]     (+2.00000e+00)
+        24                       13.1               [+2.00000e+00]     (+2.00000e+00)
+        25                       13.6               [+2.00000e+00]     (+2.00000e+00)
+        26                       14.2               [+2.00000e+00]     (+2.00000e+00)
+        27                       14.7               [+2.00000e+00]     (+2.00000e+00)
+        28                       15.3               [+2.00000e+00]     (+2.00000e+00)
+        29                       15.8               [+2.00000e+00]     (+2.00000e+00)
+        30                       16.3               [+2.00000e+00]     (+2.00000e+00)
+        31                       16.9               [+2.00000e+00]     (+2.00000e+00)
+        32                       17.4               [+2.00000e+00]     (+2.00000e+00)
+        33                       18.0               [+2.00000e+00]     (+2.00000e+00)
+        34                       18.5               [+2.00000e+00]     (+2.00000e+00)
+        35                       19.0               [+2.00000e+00]     (+2.00000e+00)
+        36                       19.6               [+2.00000e+00]     (+2.00000e+00)
+        37                       20.1               [+2.00000e+00]     (+2.00000e+00)
+        38                       20.7               [+2.00000e+00]     (+2.00000e+00)
+        39                       21.2               [+2.00000e+00]     (+2.00000e+00)
+        40                       21.8               [+2.00000e+00]     (+2.00000e+00)
+        41                       22.3               [+2.00000e+00]     (+2.00000e+00)
+        42                       22.9               [+2.00000e+00]     (+2.00000e+00)
+        43                       23.4               [+2.00000e+00]     (+2.00000e+00)
+        44                       23.9               [+2.00000e+00]     (+2.00000e+00)
+        45                       24.5               [+2.00000e+00]     (+2.00000e+00)
+        46                       25.0               [+2.00000e+00]     (+2.00000e+00)
+        47                       25.6               [+2.00000e+00]     (+2.00000e+00)
+        48                       26.1               [+2.00000e+00]     (+2.00000e+00)
+        49                       26.7               [+2.00000e+00]     (+2.00000e+00)
+        50                       27.2               [+2.00000e+00]     (+2.00000e+00)
+        51                       27.7               [+2.00000e+00]     (+2.00000e+00)
+        52                       28.3               [+2.00000e+00]     (+2.00000e+00)
+        53                       28.8               [+2.00000e+00]     (+2.00000e+00)
+        54                       29.4               [+2.00000e+00]     (+2.00000e+00)
+        55                       29.9               [+2.00000e+00]     (+2.00000e+00)
+        56                       30.4               [+2.00000e+00]     (+2.00000e+00)
+        57                       31.0               [+2.00000e+00]     (+2.00000e+00)
+        58                       31.6               [+2.00000e+00]     (+2.00000e+00)
+        59                       32.1               [+2.00000e+00]     (+2.00000e+00)
+        60                       32.6               [+2.00000e+00]     (+2.00000e+00)
+        61                       33.2               [+2.00000e+00]     (+2.00000e+00)
+        62                       33.7               [+2.00000e+00]     (+2.00000e+00)
+        63                       34.3               [+2.00000e+00]     (+2.00000e+00)
+        64                       34.8               [+2.00000e+00]     (+2.00000e+00)
+        65                       35.4               [+2.00000e+00]     (+2.00000e+00)
+        66                       35.9               [+2.00000e+00]     (+2.00000e+00)
+        67                       36.5               [+2.00000e+00]     (+2.00000e+00)
+        68                       37.0               [+2.00000e+00]     (+2.00000e+00)
+        69                       37.6               [+2.00000e+00]     (+2.00000e+00)
+        70                       38.1               [+2.00000e+00]     (+2.00000e+00)
+        71                       38.7               [+2.00000e+00]     (+2.00000e+00)
+        72                       39.2               [+2.00000e+00]     (+2.00000e+00)
+        73                       39.8               [+2.00000e+00]     (+2.00000e+00)
+        74                       40.3               [+2.00000e+00]     (+2.00000e+00)
+        75                       40.8               [+2.00000e+00]     (+2.00000e+00)
+        76                       41.4               [+2.00000e+00]     (+2.00000e+00)
+        77                       41.9               [+2.00000e+00]     (+2.00000e+00)
+        78                       42.5               [+2.00000e+00]     (+2.00000e+00)
+        79                       43.0               [+2.00000e+00]     (+2.00000e+00)
+        80                       43.5               [+2.00000e+00]     (+2.00000e+00)
+Best value found during corners phase: 2 with
+        dt_u0 = 0.1
+        dt_u1 = 0.1
+        dt_u2 = 0.1
+        dt_u3 = 0.1
+        throttle_u0 = 0
+        throttle_u2 = 0
+        brake_u1 = 0
+        brake_u3 = 0
+
+
+TEST QUASI-RANDOM SAMPLES
+
+
+++++++++++++++++++++++++++++++++++++++++++++
+Running 80 quasi-random samples with seed 1
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+        81                       44.1               [+1.00000e+00]     (+1.00000e+00)
+        82                       44.7               [-1.00000e+00]     (-1.00000e+00)
+
+END OPTIMIZATION METAHEURISTICS
+Falsified with obj = -1
+
+ ---- Best value -1 found with
+        dt_u0 = 7.525
+        dt_u1 = 1.2
+        dt_u2 = 6.04
+        dt_u3 = 4.34286
+        throttle_u0 = 27.2727
+        throttle_u2 = 23.0769
+        brake_u1 = 57.3529
+        brake_u3 = 51.3158
+
+    -1
+
+------------------ITERATION
+     3
+
+----------------------------
+#####
+     2
+
+    4.0192
+
+changing parameter to
+    4.0192
+
+Found var Iei in model workspace used by Autotrans_shift_expanded_breach/engine+impellerinertia.
+Found var Iv in model workspace used by Autotrans_shift_expanded_breach/Vehicle
+Inertia.
+Found var Kfactor in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found Kfactor, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var N20 in model workspace used by Autotrans_shift_expanded_breach/Wheel
+Speed.
+Found var Rfd in model workspace used by Autotrans_shift_expanded_breach/Final
+Drive
+Ratio1.
+Found var TWAIT in model workspace used by Autotrans_shift_expanded_breach/ShiftLogic.
+Found var Torkratio in model workspace used by Autotrans_shift_expanded_breach/TorqueRatio.
+Found Torkratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downtab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downtab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var emap in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found emap, 10 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var nevec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found nevec, 1 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var rload0 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var rload2 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var speedratio in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found speedratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var thvec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found thvec, 10 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var uptab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found uptab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var upth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found upth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+
+START OPTIMIZATION METAHEURISTICS
+
+     TEST CORNERS
+
+ Running 80 corners
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.6               [+2.00000e+00]     (+2.00000e+00)
+         2                        1.1               [+2.00000e+00]     (+2.00000e+00)
+         3                        1.7               [+2.00000e+00]     (+2.00000e+00)
+         4                        2.3               [+2.00000e+00]     (+2.00000e+00)
+         5                        2.8               [+2.00000e+00]     (+2.00000e+00)
+         6                        3.3               [+2.00000e+00]     (+2.00000e+00)
+         7                        3.9               [+2.00000e+00]     (+2.00000e+00)
+         8                        4.4               [+2.00000e+00]     (+2.00000e+00)
+         9                        5.0               [+2.00000e+00]     (+2.00000e+00)
+        10                        5.5               [+2.00000e+00]     (+2.00000e+00)
+        11                        6.1               [+3.05029e-01]     (+3.05029e-01)
+        12                        6.6               [+2.00000e+00]     (+3.05029e-01)
+        13                        7.2               [+2.00000e+00]     (+3.05029e-01)
+        14                        7.7               [+2.00000e+00]     (+3.05029e-01)
+        15                        8.2               [+2.00000e+00]     (+3.05029e-01)
+        16                        8.8               [+2.00000e+00]     (+3.05029e-01)
+        17                        9.3               [+2.00000e+00]     (+3.05029e-01)
+        18                        9.9               [+2.00000e+00]     (+3.05029e-01)
+        19                       10.4               [+2.00000e+00]     (+3.05029e-01)
+        20                       11.0               [+2.00000e+00]     (+3.05029e-01)
+        21                       11.5               [+2.00000e+00]     (+3.05029e-01)
+        22                       12.1               [+2.00000e+00]     (+3.05029e-01)
+        23                       12.6               [+2.00000e+00]     (+3.05029e-01)
+        24                       13.1               [+2.00000e+00]     (+3.05029e-01)
+        25                       13.7               [+2.00000e+00]     (+3.05029e-01)
+        26                       14.2               [+2.00000e+00]     (+3.05029e-01)
+        27                       14.8               [+2.00000e+00]     (+3.05029e-01)
+        28                       15.3               [+2.00000e+00]     (+3.05029e-01)
+        29                       15.9               [+2.00000e+00]     (+3.05029e-01)
+        30                       16.4               [+2.00000e+00]     (+3.05029e-01)
+        31                       17.0               [+2.00000e+00]     (+3.05029e-01)
+        32                       17.5               [+2.00000e+00]     (+3.05029e-01)
+        33                       18.1               [+2.00000e+00]     (+3.05029e-01)
+        34                       18.6               [+2.00000e+00]     (+3.05029e-01)
+        35                       19.2               [+2.00000e+00]     (+3.05029e-01)
+        36                       19.7               [+2.00000e+00]     (+3.05029e-01)
+        37                       20.2               [+2.00000e+00]     (+3.05029e-01)
+        38                       20.8               [+2.00000e+00]     (+3.05029e-01)
+        39                       21.3               [+2.00000e+00]     (+3.05029e-01)
+        40                       21.8               [+2.00000e+00]     (+3.05029e-01)
+        41                       22.4               [+2.00000e+00]     (+3.05029e-01)
+        42                       22.9               [+2.00000e+00]     (+3.05029e-01)
+        43                       23.5               [+2.00000e+00]     (+3.05029e-01)
+        44                       24.0               [+2.00000e+00]     (+3.05029e-01)
+        45                       24.5               [+2.00000e+00]     (+3.05029e-01)
+        46                       25.1               [+2.00000e+00]     (+3.05029e-01)
+        47                       25.7               [+2.00000e+00]     (+3.05029e-01)
+        48                       26.2               [+2.00000e+00]     (+3.05029e-01)
+        49                       26.7               [+2.00000e+00]     (+3.05029e-01)
+        50                       27.3               [+2.00000e+00]     (+3.05029e-01)
+        51                       27.8               [+2.00000e+00]     (+3.05029e-01)
+        52                       28.4               [+2.00000e+00]     (+3.05029e-01)
+        53                       28.9               [+2.00000e+00]     (+3.05029e-01)
+        54                       29.5               [+2.00000e+00]     (+3.05029e-01)
+        55                       30.0               [+2.00000e+00]     (+3.05029e-01)
+        56                       30.6               [+2.00000e+00]     (+3.05029e-01)
+        57                       31.5               [+2.00000e+00]     (+3.05029e-01)
+        58                       32.0               [+2.00000e+00]     (+3.05029e-01)
+        59                       32.6               [+2.00000e+00]     (+3.05029e-01)
+        60                       33.1               [+2.00000e+00]     (+3.05029e-01)
+        61                       33.6               [+2.00000e+00]     (+3.05029e-01)
+        62                       34.2               [+2.00000e+00]     (+3.05029e-01)
+        63                       34.7               [+2.00000e+00]     (+3.05029e-01)
+        64                       35.3               [+2.00000e+00]     (+3.05029e-01)
+        65                       35.8               [+2.00000e+00]     (+3.05029e-01)
+        66                       36.4               [+2.00000e+00]     (+3.05029e-01)
+        67                       36.9               [+2.00000e+00]     (+3.05029e-01)
+        68                       37.5               [+2.00000e+00]     (+3.05029e-01)
+        69                       38.0               [+2.00000e+00]     (+3.05029e-01)
+        70                       38.6               [+2.00000e+00]     (+3.05029e-01)
+        71                       39.2               [+2.00000e+00]     (+3.05029e-01)
+        72                       39.7               [+2.00000e+00]     (+3.05029e-01)
+        73                       40.2               [+2.00000e+00]     (+3.05029e-01)
+        74                       40.8               [+2.00000e+00]     (+3.05029e-01)
+        75                       41.4               [+2.00000e+00]     (+3.05029e-01)
+        76                       41.9               [+2.00000e+00]     (+3.05029e-01)
+        77                       42.5               [+2.00000e+00]     (+3.05029e-01)
+        78                       43.0               [+2.00000e+00]     (+3.05029e-01)
+        79                       43.5               [+2.00000e+00]     (+3.05029e-01)
+        80                       44.1               [+2.00000e+00]     (+3.05029e-01)
+Best value found during corners phase: 2 with
+        dt_u0 = 0.1
+        dt_u1 = 0.1
+        dt_u2 = 0.1
+        dt_u3 = 0.1
+        throttle_u0 = 0
+        throttle_u2 = 0
+        brake_u1 = 0
+        brake_u3 = 0
+
+
+TEST QUASI-RANDOM SAMPLES
+
+
+++++++++++++++++++++++++++++++++++++++++++++
+Running 80 quasi-random samples with seed 1
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+        81                       44.7               [+1.00000e+00]     (+3.05029e-01)
+        82                       45.2               [+1.00000e+00]     (+3.05029e-01)
+        83                       45.7               [+1.00000e+00]     (+3.05029e-01)
+        84                       46.3               [-1.00000e+00]     (-1.00000e+00)
+
+END OPTIMIZATION METAHEURISTICS
+Falsified with obj = -1
+
+ ---- Best value -1 found with
+        dt_u0 = 6.2875
+        dt_u1 = 7.8
+        dt_u2 = 0.496
+        dt_u3 = 7.17143
+        throttle_u0 = 45.4545
+        throttle_u2 = 38.4615
+        brake_u1 = 95.5882
+        brake_u3 = 85.5263
+
+    -1
+
+------------------ITERATION
+     4
+
+----------------------------
+#####
+     3
+
+    3.2154
+
+changing parameter to
+    3.2154
+
+Found var Iei in model workspace used by Autotrans_shift_expanded_breach/engine+impellerinertia.
+Found var Iv in model workspace used by Autotrans_shift_expanded_breach/Vehicle
+Inertia.
+Found var Kfactor in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found Kfactor, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var N20 in model workspace used by Autotrans_shift_expanded_breach/Wheel
+Speed.
+Found var Rfd in model workspace used by Autotrans_shift_expanded_breach/Final
+Drive
+Ratio1.
+Found var TWAIT in model workspace used by Autotrans_shift_expanded_breach/ShiftLogic.
+Found var Torkratio in model workspace used by Autotrans_shift_expanded_breach/TorqueRatio.
+Found Torkratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downtab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downtab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var emap in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found emap, 10 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var nevec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found nevec, 1 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var rload0 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var rload2 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var speedratio in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found speedratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var thvec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found thvec, 10 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var uptab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found uptab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var upth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found upth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+
+START OPTIMIZATION METAHEURISTICS
+
+     TEST CORNERS
+
+ Running 80 corners
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.6               [+2.00000e+00]     (+2.00000e+00)
+         2                        1.1               [-1.00000e+00]     (-1.00000e+00)
+
+END OPTIMIZATION METAHEURISTICS
+Falsified with obj = -1
+
+ ---- Best value -1 found with
+        dt_u0 = 10
+        dt_u1 = 10
+        dt_u2 = 10
+        dt_u3 = 10
+        throttle_u0 = 100
+        throttle_u2 = 100
+        brake_u1 = 325
+        brake_u3 = 325
+
+    -1
+
+------------------ITERATION
+     5
+
+----------------------------
+#####
+     4
+
+    2.5723
+
+changing parameter to
+    2.5723
+
+Found var Iei in model workspace used by Autotrans_shift_expanded_breach/engine+impellerinertia.
+Found var Iv in model workspace used by Autotrans_shift_expanded_breach/Vehicle
+Inertia.
+Found var Kfactor in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found Kfactor, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var N20 in model workspace used by Autotrans_shift_expanded_breach/Wheel
+Speed.
+Found var Rfd in model workspace used by Autotrans_shift_expanded_breach/Final
+Drive
+Ratio1.
+Found var TWAIT in model workspace used by Autotrans_shift_expanded_breach/ShiftLogic.
+Found var Torkratio in model workspace used by Autotrans_shift_expanded_breach/TorqueRatio.
+Found Torkratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downtab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downtab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var emap in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found emap, 10 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var nevec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found nevec, 1 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var rload0 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var rload2 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var speedratio in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found speedratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var thvec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found thvec, 10 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var uptab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found uptab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var upth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found upth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+
+START OPTIMIZATION METAHEURISTICS
+
+     TEST CORNERS
+
+ Running 80 corners
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.6               [+2.00000e+00]     (+2.00000e+00)
+         2                        1.1               [-1.00000e+00]     (-1.00000e+00)
+
+END OPTIMIZATION METAHEURISTICS
+Falsified with obj = -1
+
+ ---- Best value -1 found with
+        dt_u0 = 10
+        dt_u1 = 10
+        dt_u2 = 10
+        dt_u3 = 10
+        throttle_u0 = 100
+        throttle_u2 = 100
+        brake_u1 = 325
+        brake_u3 = 325
+
+    -1
+
+------------------ITERATION
+     6
+
+----------------------------
+#####
+     5
+
+    2.0578
+
+changing parameter to
+    2.0578
+
+Found var Iei in model workspace used by Autotrans_shift_expanded_breach/engine+impellerinertia.
+Found var Iv in model workspace used by Autotrans_shift_expanded_breach/Vehicle
+Inertia.
+Found var Kfactor in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found Kfactor, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var N20 in model workspace used by Autotrans_shift_expanded_breach/Wheel
+Speed.
+Found var Rfd in model workspace used by Autotrans_shift_expanded_breach/Final
+Drive
+Ratio1.
+Found var TWAIT in model workspace used by Autotrans_shift_expanded_breach/ShiftLogic.
+Found var Torkratio in model workspace used by Autotrans_shift_expanded_breach/TorqueRatio.
+Found Torkratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downtab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downtab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var emap in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found emap, 10 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var nevec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found nevec, 1 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var rload0 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var rload2 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var speedratio in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found speedratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var thvec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found thvec, 10 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var uptab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found uptab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var upth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found upth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+
+START OPTIMIZATION METAHEURISTICS
+
+     TEST CORNERS
+
+ Running 80 corners
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.6               [+2.00000e+00]     (+2.00000e+00)
+         2                        1.2               [+1.00000e+00]     (+1.00000e+00)
+         3                        1.7               [+1.00000e+00]     (+1.00000e+00)
+         4                        2.3               [+2.00000e+00]     (+1.00000e+00)
+         5                        2.8               [+1.00000e+00]     (+1.00000e+00)
+         6                        3.3               [+2.00000e+00]     (+1.00000e+00)
+         7                        3.9               [+2.00000e+00]     (+1.00000e+00)
+         8                        4.4               [+2.00000e+00]     (+1.00000e+00)
+         9                        5.0               [+1.00000e+00]     (+1.00000e+00)
+        10                        5.5               [+2.00000e+00]     (+1.00000e+00)
+        11                        6.0               [+1.00000e+00]     (+1.00000e+00)
+        12                        6.6               [+1.00000e+00]     (+1.00000e+00)
+        13                        7.1               [+2.00000e+00]     (+1.00000e+00)
+        14                        7.6               [+1.00000e+00]     (+1.00000e+00)
+        15                        8.2               [+1.00000e+00]     (+1.00000e+00)
+        16                        8.7               [+2.00000e+00]     (+1.00000e+00)
+        17                        9.3               [+2.00000e+00]     (+1.00000e+00)
+        18                        9.8               [+2.00000e+00]     (+1.00000e+00)
+        19                       10.4               [+2.00000e+00]     (+1.00000e+00)
+        20                       10.9               [+1.00000e+00]     (+1.00000e+00)
+        21                       11.5               [+2.00000e+00]     (+1.00000e+00)
+        22                       12.1               [+2.00000e+00]     (+1.00000e+00)
+        23                       12.6               [+1.00000e+00]     (+1.00000e+00)
+        24                       13.2               [+2.00000e+00]     (+1.00000e+00)
+        25                       13.7               [+2.00000e+00]     (+1.00000e+00)
+        26                       14.2               [+1.00000e+00]     (+1.00000e+00)
+        27                       14.8               [+1.00000e+00]     (+1.00000e+00)
+        28                       15.3               [+2.00000e+00]     (+1.00000e+00)
+        29                       15.9               [+1.00000e+00]     (+1.00000e+00)
+        30                       16.4               [+2.00000e+00]     (+1.00000e+00)
+        31                       17.0               [+2.00000e+00]     (+1.00000e+00)
+        32                       17.5               [+1.00000e+00]     (+1.00000e+00)
+        33                       18.0               [+1.00000e+00]     (+1.00000e+00)
+        34                       18.6               [+2.00000e+00]     (+1.00000e+00)
+        35                       19.1               [+2.00000e+00]     (+1.00000e+00)
+        36                       19.7               [+2.00000e+00]     (+1.00000e+00)
+        37                       20.2               [+2.00000e+00]     (+1.00000e+00)
+        38                       20.7               [+1.00000e+00]     (+1.00000e+00)
+        39                       21.3               [+1.00000e+00]     (+1.00000e+00)
+        40                       21.8               [+2.00000e+00]     (+1.00000e+00)
+        41                       22.4               [+2.00000e+00]     (+1.00000e+00)
+        42                       22.9               [+2.00000e+00]     (+1.00000e+00)
+        43                       23.4               [+1.00000e+00]     (+1.00000e+00)
+        44                       24.0               [+1.00000e+00]     (+1.00000e+00)
+        45                       24.6               [+1.00000e+00]     (+1.00000e+00)
+        46                       25.1               [+2.00000e+00]     (+1.00000e+00)
+        47                       25.7               [+2.00000e+00]     (+1.00000e+00)
+        48                       26.2               [+2.00000e+00]     (+1.00000e+00)
+        49                       26.7               [+2.00000e+00]     (+1.00000e+00)
+        50                       27.3               [+2.00000e+00]     (+1.00000e+00)
+        51                       27.8               [+2.00000e+00]     (+1.00000e+00)
+        52                       28.4               [+2.00000e+00]     (+1.00000e+00)
+        53                       28.9               [+1.00000e+00]     (+1.00000e+00)
+        54                       29.5               [+2.00000e+00]     (+1.00000e+00)
+        55                       30.0               [+1.00000e+00]     (+1.00000e+00)
+        56                       30.5               [+2.00000e+00]     (+1.00000e+00)
+        57                       31.1               [+1.00000e+00]     (+1.00000e+00)
+        58                       31.6               [+2.00000e+00]     (+1.00000e+00)
+        59                       32.2               [+2.00000e+00]     (+1.00000e+00)
+        60                       32.8               [+2.00000e+00]     (+1.00000e+00)
+        61                       33.4               [+2.00000e+00]     (+1.00000e+00)
+        62                       33.9               [+2.00000e+00]     (+1.00000e+00)
+        63                       34.5               [+1.00000e+00]     (+1.00000e+00)
+        64                       35.0               [+1.00000e+00]     (+1.00000e+00)
+        65                       35.6               [+1.00000e+00]     (+1.00000e+00)
+        66                       36.1               [+1.00000e+00]     (+1.00000e+00)
+        67                       36.7               [+2.00000e+00]     (+1.00000e+00)
+        68                       37.2               [+2.00000e+00]     (+1.00000e+00)
+        69                       37.8               [+2.00000e+00]     (+1.00000e+00)
+        70                       38.3               [+1.00000e+00]     (+1.00000e+00)
+        71                       38.9               [+2.00000e+00]     (+1.00000e+00)
+        72                       39.4               [+1.00000e+00]     (+1.00000e+00)
+        73                       40.0               [+2.00000e+00]     (+1.00000e+00)
+        74                       40.5               [+2.00000e+00]     (+1.00000e+00)
+        75                       41.1               [+1.00000e+00]     (+1.00000e+00)
+        76                       41.6               [+1.00000e+00]     (+1.00000e+00)
+        77                       42.1               [+1.00000e+00]     (+1.00000e+00)
+        78                       42.7               [+2.00000e+00]     (+1.00000e+00)
+        79                       43.2               [+2.00000e+00]     (+1.00000e+00)
+        80                       43.8               [+2.00000e+00]     (+1.00000e+00)
+Best value found during corners phase: 2 with
+        dt_u0 = 0.1
+        dt_u1 = 0.1
+        dt_u2 = 0.1
+        dt_u3 = 0.1
+        throttle_u0 = 0
+        throttle_u2 = 0
+        brake_u1 = 0
+        brake_u3 = 0
+
+
+TEST QUASI-RANDOM SAMPLES
+
+
+++++++++++++++++++++++++++++++++++++++++++++
+Running 80 quasi-random samples with seed 1
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+        81                       44.3               [+2.00000e+00]     (+1.00000e+00)
+        82                       44.9               [+1.00000e+00]     (+1.00000e+00)
+        83                       45.4               [+1.00000e+00]     (+1.00000e+00)
+        84                       46.0               [+1.00000e+00]     (+1.00000e+00)
+        85                       46.5               [+1.00000e+00]     (+1.00000e+00)
+        86                       47.0               [+1.00000e+00]     (+1.00000e+00)
+        87                       47.6               [+1.00000e+00]     (+1.00000e+00)
+        88                       48.1               [+1.00000e+00]     (+1.00000e+00)
+        89                       48.7               [+1.00000e+00]     (+1.00000e+00)
+        90                       49.2               [+1.00000e+00]     (+1.00000e+00)
+        91                       49.8               [+1.00000e+00]     (+1.00000e+00)
+        92                       50.4               [+2.00000e+00]     (+1.00000e+00)
+        93                       50.9               [+2.00000e+00]     (+1.00000e+00)
+        94                       51.4               [+1.00000e+00]     (+1.00000e+00)
+        95                       52.0               [+2.00000e+00]     (+1.00000e+00)
+        96                       52.5               [+1.00000e+00]     (+1.00000e+00)
+        97                       53.1               [+1.00000e+00]     (+1.00000e+00)
+        98                       53.6               [+7.90591e-01]     (+7.90591e-01)
+        99                       54.2               [+1.00000e+00]     (+7.90591e-01)
+       100                       54.7               [+1.00000e+00]     (+7.90591e-01)
+       101                       55.3               [+1.00000e+00]     (+7.90591e-01)
+       102                       55.8               [+1.00000e+00]     (+7.90591e-01)
+       103                       56.4               [+1.00000e+00]     (+7.90591e-01)
+       104                       56.9               [+1.00000e+00]     (+7.90591e-01)
+       105                       57.4               [+1.00000e+00]     (+7.90591e-01)
+       106                       58.1               [+1.00000e+00]     (+7.90591e-01)
+       107                       58.7               [+1.00000e+00]     (+7.90591e-01)
+       108                       59.2               [+1.00000e+00]     (+7.90591e-01)
+       109                       59.8               [+1.00000e+00]     (+7.90591e-01)
+       110                       60.3               [+1.00000e+00]     (+7.90591e-01)
+       111                       60.9               [+1.00000e+00]     (+7.90591e-01)
+       112                       61.4               [+1.00000e+00]     (+7.90591e-01)
+       113                       62.0               [+1.00000e+00]     (+7.90591e-01)
+       114                       62.6               [+1.00000e+00]     (+7.90591e-01)
+       115                       63.1               [+1.00000e+00]     (+7.90591e-01)
+       116                       63.6               [+1.00000e+00]     (+7.90591e-01)
+       117                       64.2               [+1.00000e+00]     (+7.90591e-01)
+       118                       64.7               [+1.00000e+00]     (+7.90591e-01)
+       119                       65.3               [+2.00000e+00]     (+7.90591e-01)
+       120                       65.8               [+1.00000e+00]     (+7.90591e-01)
+       121                       66.4               [+1.00000e+00]     (+7.90591e-01)
+       122                       66.9               [+1.00000e+00]     (+7.90591e-01)
+       123                       67.4               [+1.00000e+00]     (+7.90591e-01)
+       124                       68.0               [+1.00000e+00]     (+7.90591e-01)
+       125                       68.5               [+1.00000e+00]     (+7.90591e-01)
+       126                       69.1               [+1.00000e+00]     (+7.90591e-01)
+       127                       69.6               [+1.00000e+00]     (+7.90591e-01)
+       128                       70.2               [+1.00000e+00]     (+7.90591e-01)
+       129                       70.7               [+1.00000e+00]     (+7.90591e-01)
+       130                       71.3               [+1.00000e+00]     (+7.90591e-01)
+       131                       71.8               [+1.00000e+00]     (+7.90591e-01)
+       132                       72.4               [+1.00000e+00]     (+7.90591e-01)
+       133                       72.9               [+1.00000e+00]     (+7.90591e-01)
+       134                       73.5               [+2.00000e+00]     (+7.90591e-01)
+       135                       74.0               [+2.00000e+00]     (+7.90591e-01)
+       136                       74.5               [+1.00000e+00]     (+7.90591e-01)
+       137                       75.1               [+1.00000e+00]     (+7.90591e-01)
+       138                       75.6               [+1.00000e+00]     (+7.90591e-01)
+       139                       76.2               [+1.00000e+00]     (+7.90591e-01)
+       140                       76.7               [+1.00000e+00]     (+7.90591e-01)
+       141                       77.3               [+1.00000e+00]     (+7.90591e-01)
+       142                       77.8               [+1.00000e+00]     (+7.90591e-01)
+       143                       78.4               [+1.00000e+00]     (+7.90591e-01)
+       144                       78.9               [+1.00000e+00]     (+7.90591e-01)
+       145                       79.5               [+2.00000e+00]     (+7.90591e-01)
+       146                       80.0               [+2.00000e+00]     (+7.90591e-01)
+       147                       80.5               [+1.00000e+00]     (+7.90591e-01)
+       148                       81.1               [+1.00000e+00]     (+7.90591e-01)
+       149                       81.6               [+1.00000e+00]     (+7.90591e-01)
+       150                       82.2               [+1.00000e+00]     (+7.90591e-01)
+       151                       82.7               [+1.00000e+00]     (+7.90591e-01)
+       152                       83.3               [-1.00000e+00]     (-1.00000e+00)
+
+END OPTIMIZATION METAHEURISTICS
+Falsified with obj = -1
+
+ ---- Best value -1 found with
+        dt_u0 = 5.74609
+        dt_u1 = 4.37778
+        dt_u2 = 7.7824
+        dt_u3 = 4.97784
+        throttle_u0 = 68.595
+        throttle_u2 = 64.497
+        brake_u1 = 100.087
+        brake_u3 = 276.385
+
+    -1
+
+------------------ITERATION
+     7
+
+----------------------------
+#####
+     6
+
+    1.6463
+
+changing parameter to
+    1.6463
+
+Found var Iei in model workspace used by Autotrans_shift_expanded_breach/engine+impellerinertia.
+Found var Iv in model workspace used by Autotrans_shift_expanded_breach/Vehicle
+Inertia.
+Found var Kfactor in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found Kfactor, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var N20 in model workspace used by Autotrans_shift_expanded_breach/Wheel
+Speed.
+Found var Rfd in model workspace used by Autotrans_shift_expanded_breach/Final
+Drive
+Ratio1.
+Found var TWAIT in model workspace used by Autotrans_shift_expanded_breach/ShiftLogic.
+Found var Torkratio in model workspace used by Autotrans_shift_expanded_breach/TorqueRatio.
+Found Torkratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downtab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downtab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var downth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_down.
+Found downth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var emap in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found emap, 10 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var nevec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found nevec, 1 11 table -  Set 'FindTables' option to true to generate table parameters.
+Found var rload0 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var rload2 in model workspace used by Autotrans_shift_expanded_breach/RoadLoad.
+Found var speedratio in model workspace used by Autotrans_shift_expanded_breach/FactorK.
+Found speedratio, 21 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var thvec in model workspace used by Autotrans_shift_expanded_breach/EngineTorque.
+Found thvec, 10 1 table -  Set 'FindTables' option to true to generate table parameters.
+Found var uptab in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found uptab, 6 4 table -  Set 'FindTables' option to true to generate table parameters.
+Found var upth in model workspace used by Autotrans_shift_expanded_breach/ThresholdCalculation/interp_up.
+Found upth, 6 1 table -  Set 'FindTables' option to true to generate table parameters.
+
+START OPTIMIZATION METAHEURISTICS
+
+     TEST CORNERS
+
+ Running 80 corners
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.6               [+2.00000e+00]     (+2.00000e+00)
+         2                        1.1               [+1.00000e+00]     (+1.00000e+00)
+         3                        1.7               [+1.00000e+00]     (+1.00000e+00)
+         4                        2.2               [+2.00000e+00]     (+1.00000e+00)
+         5                        2.8               [+1.00000e+00]     (+1.00000e+00)
+         6                        3.3               [+2.00000e+00]     (+1.00000e+00)
+         7                        3.9               [+2.00000e+00]     (+1.00000e+00)
+         8                        4.4               [+2.00000e+00]     (+1.00000e+00)
+         9                        5.0               [+1.00000e+00]     (+1.00000e+00)
+        10                        5.5               [+2.00000e+00]     (+1.00000e+00)
+        11                        6.0               [+1.00000e+00]     (+1.00000e+00)
+        12                        6.6               [+1.00000e+00]     (+1.00000e+00)
+        13                        7.1               [+2.00000e+00]     (+1.00000e+00)
+        14                        7.7               [+1.00000e+00]     (+1.00000e+00)
+        15                        8.2               [+1.00000e+00]     (+1.00000e+00)
+        16                        8.8               [+2.00000e+00]     (+1.00000e+00)
+        17                        9.4               [+2.00000e+00]     (+1.00000e+00)
+        18                        9.9               [+2.00000e+00]     (+1.00000e+00)
+        19                       10.5               [+2.00000e+00]     (+1.00000e+00)
+        20                       11.0               [+1.00000e+00]     (+1.00000e+00)
+        21                       11.6               [+2.00000e+00]     (+1.00000e+00)
+        22                       12.1               [+2.00000e+00]     (+1.00000e+00)
+        23                       12.7               [+1.00000e+00]     (+1.00000e+00)
+        24                       13.2               [+2.00000e+00]     (+1.00000e+00)
+        25                       13.8               [+2.00000e+00]     (+1.00000e+00)
+        26                       14.3               [+1.00000e+00]     (+1.00000e+00)
+        27                       14.9               [+1.00000e+00]     (+1.00000e+00)
+        28                       15.4               [+2.00000e+00]     (+1.00000e+00)
+        29                       15.9               [+1.00000e+00]     (+1.00000e+00)
+        30                       16.5               [+2.00000e+00]     (+1.00000e+00)
+        31                       17.0               [+2.00000e+00]     (+1.00000e+00)
+        32                       17.6               [+1.00000e+00]     (+1.00000e+00)
+        33                       18.1               [+1.00000e+00]     (+1.00000e+00)
+        34                       18.7               [+2.00000e+00]     (+1.00000e+00)
+        35                       19.2               [+2.00000e+00]     (+1.00000e+00)
+        36                       19.8               [+2.00000e+00]     (+1.00000e+00)
+        37                       20.3               [+2.00000e+00]     (+1.00000e+00)
+        38                       20.9               [+1.00000e+00]     (+1.00000e+00)
+        39                       21.4               [+1.00000e+00]     (+1.00000e+00)
+        40                       22.0               [+2.00000e+00]     (+1.00000e+00)
+        41                       22.5               [+2.00000e+00]     (+1.00000e+00)
+        42                       23.1               [+2.00000e+00]     (+1.00000e+00)
+        43                       23.6               [+1.00000e+00]     (+1.00000e+00)
+        44                       24.2               [+1.00000e+00]     (+1.00000e+00)
+        45                       24.7               [+1.00000e+00]     (+1.00000e+00)
+        46                       25.3               [+2.00000e+00]     (+1.00000e+00)
+        47                       25.8               [+2.00000e+00]     (+1.00000e+00)
+        48                       26.4               [+2.00000e+00]     (+1.00000e+00)
+        49                       26.9               [+2.00000e+00]     (+1.00000e+00)
+        50                       27.5               [+2.00000e+00]     (+1.00000e+00)
+        51                       28.0               [+2.00000e+00]     (+1.00000e+00)
+        52                       28.5               [+2.00000e+00]     (+1.00000e+00)
+        53                       29.1               [+1.00000e+00]     (+1.00000e+00)
+        54                       29.6               [+2.00000e+00]     (+1.00000e+00)
+        55                       30.2               [+1.00000e+00]     (+1.00000e+00)
+        56                       30.7               [+2.00000e+00]     (+1.00000e+00)
+        57                       31.3               [+1.00000e+00]     (+1.00000e+00)
+        58                       31.8               [+2.00000e+00]     (+1.00000e+00)
+        59                       32.4               [+2.00000e+00]     (+1.00000e+00)
+        60                       33.0               [+2.00000e+00]     (+1.00000e+00)
+        61                       33.5               [+2.00000e+00]     (+1.00000e+00)
+        62                       34.1               [+2.00000e+00]     (+1.00000e+00)
+        63                       34.6               [+1.00000e+00]     (+1.00000e+00)
+        64                       35.2               [+1.00000e+00]     (+1.00000e+00)
+        65                       35.7               [+1.00000e+00]     (+1.00000e+00)
+        66                       36.3               [+1.00000e+00]     (+1.00000e+00)
+        67                       36.8               [+2.00000e+00]     (+1.00000e+00)
+        68                       37.4               [+2.00000e+00]     (+1.00000e+00)
+        69                       38.0               [+2.00000e+00]     (+1.00000e+00)
+        70                       38.5               [+1.00000e+00]     (+1.00000e+00)
+        71                       39.1               [+2.00000e+00]     (+1.00000e+00)
+        72                       39.6               [+1.00000e+00]     (+1.00000e+00)
+        73                       40.2               [+2.00000e+00]     (+1.00000e+00)
+        74                       40.8               [+2.00000e+00]     (+1.00000e+00)
+        75                       41.4               [+1.00000e+00]     (+1.00000e+00)
+        76                       42.0               [+1.00000e+00]     (+1.00000e+00)
+        77                       42.6               [+1.00000e+00]     (+1.00000e+00)
+        78                       43.1               [+2.00000e+00]     (+1.00000e+00)
+        79                       43.7               [+2.00000e+00]     (+1.00000e+00)
+        80                       44.2               [+2.00000e+00]     (+1.00000e+00)
+Best value found during corners phase: 2 with
+        dt_u0 = 0.1
+        dt_u1 = 0.1
+        dt_u2 = 0.1
+        dt_u3 = 0.1
+        throttle_u0 = 0
+        throttle_u2 = 0
+        brake_u1 = 0
+        brake_u3 = 0
+
+
+TEST QUASI-RANDOM SAMPLES
+
+
+++++++++++++++++++++++++++++++++++++++++++++
+Running 80 quasi-random samples with seed 1
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+        81                       44.9               [+2.00000e+00]     (+1.00000e+00)
+        82                       45.5               [+1.00000e+00]     (+1.00000e+00)
+        83                       46.0               [+1.00000e+00]     (+1.00000e+00)
+        84                       46.6               [+1.00000e+00]     (+1.00000e+00)
+        85                       47.1               [+1.00000e+00]     (+1.00000e+00)
+        86                       47.7               [+1.00000e+00]     (+1.00000e+00)
+        87                       48.2               [+1.00000e+00]     (+1.00000e+00)
+        88                       48.8               [+1.00000e+00]     (+1.00000e+00)
+        89                       49.3               [+1.00000e+00]     (+1.00000e+00)
+        90                       49.9               [+1.00000e+00]     (+1.00000e+00)
+        91                       50.4               [+1.00000e+00]     (+1.00000e+00)
+        92                       51.0               [+2.00000e+00]     (+1.00000e+00)
+        93                       51.5               [+2.00000e+00]     (+1.00000e+00)
+        94                       52.1               [+1.00000e+00]     (+1.00000e+00)
+        95                       52.6               [+2.00000e+00]     (+1.00000e+00)
+        96                       53.2               [+1.00000e+00]     (+1.00000e+00)
+        97                       53.7               [+1.00000e+00]     (+1.00000e+00)
+        98                       54.3               [+1.00000e+00]     (+1.00000e+00)
+        99                       54.8               [+1.00000e+00]     (+1.00000e+00)
+       100                       55.4               [+1.00000e+00]     (+1.00000e+00)
+       101                       55.9               [+1.00000e+00]     (+1.00000e+00)
+       102                       56.5               [+1.00000e+00]     (+1.00000e+00)
+       103                       57.0               [+1.00000e+00]     (+1.00000e+00)
+       104                       57.6               [+2.00000e+00]     (+1.00000e+00)
+       105                       58.1               [+2.00000e+00]     (+1.00000e+00)
+       106                       58.7               [+1.00000e+00]     (+1.00000e+00)
+       107                       59.2               [+2.00000e+00]     (+1.00000e+00)
+       108                       59.8               [+1.00000e+00]     (+1.00000e+00)
+       109                       60.3               [+1.00000e+00]     (+1.00000e+00)
+       110                       60.9               [+1.00000e+00]     (+1.00000e+00)
+       111                       61.4               [+1.00000e+00]     (+1.00000e+00)
+       112                       62.0               [+1.00000e+00]     (+1.00000e+00)
+       113                       62.5               [+1.00000e+00]     (+1.00000e+00)
+       114                       63.1               [+2.00000e+00]     (+1.00000e+00)
+       115                       63.6               [+1.00000e+00]     (+1.00000e+00)
+       116                       64.2               [+1.00000e+00]     (+1.00000e+00)
+       117                       64.7               [+1.00000e+00]     (+1.00000e+00)
+       118                       65.3               [+1.00000e+00]     (+1.00000e+00)
+       119                       65.8               [+2.00000e+00]     (+1.00000e+00)
+       120                       66.4               [+1.00000e+00]     (+1.00000e+00)
+       121                       66.9               [+1.00000e+00]     (+1.00000e+00)
+       122                       67.5               [+1.00000e+00]     (+1.00000e+00)
+       123                       68.0               [+1.00000e+00]     (+1.00000e+00)
+       124                       68.6               [+2.00000e+00]     (+1.00000e+00)
+       125                       69.1               [+1.00000e+00]     (+1.00000e+00)
+       126                       69.7               [+1.00000e+00]     (+1.00000e+00)
+       127                       70.3               [+1.00000e+00]     (+1.00000e+00)
+       128                       70.8               [+1.00000e+00]     (+1.00000e+00)
+       129                       71.3               [+1.00000e+00]     (+1.00000e+00)
+       130                       71.9               [+1.00000e+00]     (+1.00000e+00)
+       131                       72.4               [+2.00000e+00]     (+1.00000e+00)
+       132                       73.0               [+1.00000e+00]     (+1.00000e+00)
+       133                       73.5               [+1.00000e+00]     (+1.00000e+00)
+       134                       74.1               [+2.00000e+00]     (+1.00000e+00)
+       135                       74.6               [+2.00000e+00]     (+1.00000e+00)
+       136                       75.2               [+1.00000e+00]     (+1.00000e+00)
+       137                       75.7               [+1.00000e+00]     (+1.00000e+00)
+       138                       76.3               [+1.00000e+00]     (+1.00000e+00)
+       139                       76.8               [+2.00000e+00]     (+1.00000e+00)
+       140                       77.4               [+1.00000e+00]     (+1.00000e+00)
+       141                       77.9               [+1.00000e+00]     (+1.00000e+00)
+       142                       78.5               [+1.00000e+00]     (+1.00000e+00)
+       143                       79.0               [+1.00000e+00]     (+1.00000e+00)
+       144                       79.6               [+1.00000e+00]     (+1.00000e+00)
+       145                       80.1               [+2.00000e+00]     (+1.00000e+00)
+       146                       80.7               [+2.00000e+00]     (+1.00000e+00)
+       147                       81.2               [+2.00000e+00]     (+1.00000e+00)
+       148                       81.8               [+1.00000e+00]     (+1.00000e+00)
+       149                       82.3               [+1.00000e+00]     (+1.00000e+00)
+       150                       82.9               [+1.00000e+00]     (+1.00000e+00)
+       151                       83.4               [+1.00000e+00]     (+1.00000e+00)
+       152                       84.0               [+1.00000e+00]     (+1.00000e+00)
+       153                       84.5               [+1.00000e+00]     (+1.00000e+00)
+       154                       85.1               [+1.00000e+00]     (+1.00000e+00)
+       155                       85.6               [+1.00000e+00]     (+1.00000e+00)
+       156                       86.2               [+1.00000e+00]     (+1.00000e+00)
+       157                       86.7               [+2.00000e+00]     (+1.00000e+00)
+       158                       87.3               [+2.00000e+00]     (+1.00000e+00)
+       159                       87.8               [+2.00000e+00]     (+1.00000e+00)
+       160                       88.4               [+1.00000e+00]     (+1.00000e+00)
+Best value found during quasi-random phase: 1 with
+        dt_u0 = 7.525
+        dt_u1 = 1.2
+        dt_u2 = 6.04
+        dt_u3 = 4.34286
+        throttle_u0 = 27.2727
+        throttle_u2 = 23.0769
+        brake_u1 = 57.3529
+        brake_u3 = 51.3158
+
+
+RUN LOCAL OPTIMIZATION
+
+
+********************************************
+Starting Nelder Mead optimization from x0:
+        dt_u0 = 7.525
+        dt_u1 = 1.2
+        dt_u2 = 6.04
+        dt_u3 = 4.34286
+        throttle_u0 = 27.2727
+        throttle_u2 = 23.0769
+        brake_u1 = 57.3529
+        brake_u3 = 51.3158
+
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+       161                       89.2               [+1.00000e+00]     (+1.00000e+00)
+       162                       89.7               [+1.00000e+00]     (+1.00000e+00)
+       163                       90.3               [+1.00000e+00]     (+1.00000e+00)
+       164                       90.9               [+1.00000e+00]     (+1.00000e+00)
+       165                       91.4               [+1.00000e+00]     (+1.00000e+00)
+       166                       92.0               [+1.00000e+00]     (+1.00000e+00)
+       167                       92.5               [+1.00000e+00]     (+1.00000e+00)
+       168                       93.1               [+1.00000e+00]     (+1.00000e+00)
+       169                       93.7               [+1.00000e+00]     (+1.00000e+00)
+       170                       94.2               [+1.00000e+00]     (+1.00000e+00)
+       171                       94.8               [+1.00000e+00]     (+1.00000e+00)
+       172                       95.3               [+1.00000e+00]     (+1.00000e+00)
+       173                       95.9               [+1.00000e+00]     (+1.00000e+00)
+       174                       96.5               [+1.00000e+00]     (+1.00000e+00)
+       175                       97.0               [+1.00000e+00]     (+1.00000e+00)
+       176                       97.6               [+1.00000e+00]     (+1.00000e+00)
+       177                       98.1               [+1.00000e+00]     (+1.00000e+00)
+       178                       98.7               [+1.00000e+00]     (+1.00000e+00)
+       179                       99.2               [+1.00000e+00]     (+1.00000e+00)
+       180                       99.8               [+1.00000e+00]     (+1.00000e+00)
+       181                      100.4               [+1.00000e+00]     (+1.00000e+00)
+       182                      100.9               [+1.00000e+00]     (+1.00000e+00)
+       183                      101.5               [+1.00000e+00]     (+1.00000e+00)
+       184                      102.0               [+1.00000e+00]     (+1.00000e+00)
+       185                      102.6               [+1.00000e+00]     (+1.00000e+00)
+       186                      103.1               [+1.00000e+00]     (+1.00000e+00)
+       187                      103.7               [+1.00000e+00]     (+1.00000e+00)
+       188                      104.2               [+1.00000e+00]     (+1.00000e+00)
+       189                      104.8               [+1.00000e+00]     (+1.00000e+00)
+       190                      105.3               [+1.00000e+00]     (+1.00000e+00)
+       191                      105.9               [+1.00000e+00]     (+1.00000e+00)
+       192                      106.5               [+1.00000e+00]     (+1.00000e+00)
+       193                      107.0               [+1.00000e+00]     (+1.00000e+00)
+       194                      107.6               [+1.00000e+00]     (+1.00000e+00)
+       195                      108.1               [+1.00000e+00]     (+1.00000e+00)
+       196                      108.7               [+1.00000e+00]     (+1.00000e+00)
+       197                      109.3               [+1.00000e+00]     (+1.00000e+00)
+       198                      109.8               [+1.00000e+00]     (+1.00000e+00)
+       199                      110.4               [+1.00000e+00]     (+1.00000e+00)
+       200                      110.9               [+1.00000e+00]     (+1.00000e+00)
+       201                      111.5               [+1.00000e+00]     (+1.00000e+00)
+       202                      112.0               [+1.00000e+00]     (+1.00000e+00)
+       203                      112.6               [+1.00000e+00]     (+1.00000e+00)
+       204                      113.2               [+1.00000e+00]     (+1.00000e+00)
+       205                      113.7               [+1.00000e+00]     (+1.00000e+00)
+       206                      114.3               [+1.00000e+00]     (+1.00000e+00)
+       207                      114.8               [+1.00000e+00]     (+1.00000e+00)
+       208                      115.4               [+1.00000e+00]     (+1.00000e+00)
+       209                      115.9               [+1.00000e+00]     (+1.00000e+00)
+       210                      116.5               [+1.00000e+00]     (+1.00000e+00)
+       211                      117.1               [+1.00000e+00]     (+1.00000e+00)
+       212                      117.6               [+1.00000e+00]     (+1.00000e+00)
+       213                      118.2               [+1.00000e+00]     (+1.00000e+00)
+       214                      118.7               [+1.00000e+00]     (+1.00000e+00)
+       215                      119.3               [+1.00000e+00]     (+1.00000e+00)
+       216                      119.8               [+1.00000e+00]     (+1.00000e+00)
+       217                      120.4               [+1.00000e+00]     (+1.00000e+00)
+       218                      120.9               [+1.00000e+00]     (+1.00000e+00)
+       219                      121.5               [+1.00000e+00]     (+1.00000e+00)
+       220                      122.1               [+1.00000e+00]     (+1.00000e+00)
+       221                      122.6               [+1.00000e+00]     (+1.00000e+00)
+       222                      123.2               [+1.00000e+00]     (+1.00000e+00)
+       223                      123.7               [+1.00000e+00]     (+1.00000e+00)
+       224                      124.3               [+1.00000e+00]     (+1.00000e+00)
+       225                      124.8               [+1.00000e+00]     (+1.00000e+00)
+       226                      125.4               [+1.00000e+00]     (+1.00000e+00)
+       227                      125.9               [+1.00000e+00]     (+1.00000e+00)
+       228                      126.5               [+1.00000e+00]     (+1.00000e+00)
+       229                      127.0               [+1.00000e+00]     (+1.00000e+00)
+       230                      127.6               [+1.00000e+00]     (+1.00000e+00)
+       231                      128.1               [+1.00000e+00]     (+1.00000e+00)
+       232                      128.7               [+1.00000e+00]     (+1.00000e+00)
+       233                      129.3               [+1.00000e+00]     (+1.00000e+00)
+       234                      129.8               [+1.00000e+00]     (+1.00000e+00)
+       235                      130.4               [+1.00000e+00]     (+1.00000e+00)
+       236                      130.9               [+1.00000e+00]     (+1.00000e+00)
+       237                      131.5               [+1.00000e+00]     (+1.00000e+00)
+       238                      132.0               [+1.00000e+00]     (+1.00000e+00)
+       239                      132.6               [+1.00000e+00]     (+1.00000e+00)
+       240                      133.1               [+1.00000e+00]     (+1.00000e+00)
+       241                      133.7               [+1.00000e+00]     (+1.00000e+00)
+       242                      134.3               [+1.00000e+00]     (+1.00000e+00)
+       243                      134.8               [+1.00000e+00]     (+1.00000e+00)
+       244                      135.4               [+1.00000e+00]     (+1.00000e+00)
+       245                      136.0               [+1.00000e+00]     (+1.00000e+00)
+       246                      136.5               [+1.00000e+00]     (+1.00000e+00)
+       247                      137.1               [+1.00000e+00]     (+1.00000e+00)
+       248                      137.6               [+1.00000e+00]     (+1.00000e+00)
+       249                      138.2               [+1.00000e+00]     (+1.00000e+00)
+       250                      138.7               [+1.00000e+00]     (+1.00000e+00)
+       251                      139.3               [+1.00000e+00]     (+1.00000e+00)
+       252                      139.8               [+1.00000e+00]     (+1.00000e+00)
+       253                      140.4               [+1.00000e+00]     (+1.00000e+00)
+       254                      141.0               [+1.00000e+00]     (+1.00000e+00)
+       255                      141.5               [+1.00000e+00]     (+1.00000e+00)
+       256                      142.1               [+1.00000e+00]     (+1.00000e+00)
+       257                      142.6               [+1.00000e+00]     (+1.00000e+00)
+       258                      143.2               [+1.00000e+00]     (+1.00000e+00)
+       259                      143.7               [+1.00000e+00]     (+1.00000e+00)
+Best value found during local phase: 1 with
+        dt_u0 = 7.525
+        dt_u1 = 1.2
+        dt_u2 = 6.04
+        dt_u3 = 4.34286
+        throttle_u0 = 27.2727
+        throttle_u2 = 23.0769
+        brake_u1 = 57.3529
+        brake_u3 = 51.3158
+
+
+TEST QUASI-RANDOM SAMPLES
+
+
+++++++++++++++++++++++++++++++++++++++++++++
+Running 80 quasi-random samples with seed 81
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+       260                      144.3               [+1.00000e+00]     (+1.00000e+00)
+       261                      144.8               [+1.00000e+00]     (+1.00000e+00)
+       262                      145.4               [+1.00000e+00]     (+1.00000e+00)
+       263                      145.9               [+1.00000e+00]     (+1.00000e+00)
+       264                      146.5               [+1.00000e+00]     (+1.00000e+00)
+       265                      147.0               [+1.00000e+00]     (+1.00000e+00)
+       266                      147.5               [+1.00000e+00]     (+1.00000e+00)
+       267                      148.1               [+1.00000e+00]     (+1.00000e+00)
+       268                      148.6               [+1.00000e+00]     (+1.00000e+00)
+       269                      149.2               [+1.00000e+00]     (+1.00000e+00)
+       270                      149.7               [+2.00000e+00]     (+1.00000e+00)
+       271                      150.3               [+1.00000e+00]     (+1.00000e+00)
+       272                      150.8               [+1.00000e+00]     (+1.00000e+00)
+       273                      151.4               [+1.00000e+00]     (+1.00000e+00)
+       274                      151.9               [+2.00000e+00]     (+1.00000e+00)
+       275                      152.5               [+1.00000e+00]     (+1.00000e+00)
+       276                      153.0               [+1.00000e+00]     (+1.00000e+00)
+       277                      153.6               [+1.00000e+00]     (+1.00000e+00)
+       278                      154.1               [+2.00000e+00]     (+1.00000e+00)
+       279                      154.6               [+1.00000e+00]     (+1.00000e+00)
+       280                      155.2               [+1.00000e+00]     (+1.00000e+00)
+       281                      155.7               [+1.00000e+00]     (+1.00000e+00)
+       282                      156.3               [+2.00000e+00]     (+1.00000e+00)
+       283                      156.8               [+1.00000e+00]     (+1.00000e+00)
+       284                      157.4               [+1.00000e+00]     (+1.00000e+00)
+       285                      157.9               [+1.00000e+00]     (+1.00000e+00)
+       286                      158.5               [+1.00000e+00]     (+1.00000e+00)
+       287                      159.0               [+1.00000e+00]     (+1.00000e+00)
+       288                      159.6               [+2.00000e+00]     (+1.00000e+00)
+       289                      160.2               [+1.00000e+00]     (+1.00000e+00)
+       290                      160.7               [+1.00000e+00]     (+1.00000e+00)
+       291                      161.3               [+1.00000e+00]     (+1.00000e+00)
+       292                      161.8               [+1.00000e+00]     (+1.00000e+00)
+       293                      162.4               [+1.00000e+00]     (+1.00000e+00)
+       294                      162.9               [+1.00000e+00]     (+1.00000e+00)
+       295                      163.5               [+1.00000e+00]     (+1.00000e+00)
+       296                      164.0               [+1.00000e+00]     (+1.00000e+00)
+       297                      164.5               [+1.00000e+00]     (+1.00000e+00)
+       298                      165.1               [+2.00000e+00]     (+1.00000e+00)
+       299                      165.6               [+2.00000e+00]     (+1.00000e+00)
+       300                      166.2               [+1.00000e+00]     (+1.00000e+00)
+
+END OPTIMIZATION METAHEURISTICS
+
+ Stopped after max_obj_eval was reached (maximum number of objective function evaluations).
+No falsifying trace found.
+
+ ---- Best value 1 found with
+        dt_u0 = 10
+        dt_u1 = 10
+        dt_u2 = 10
+        dt_u3 = 10
+        throttle_u0 = 100
+        throttle_u2 = 100
+        brake_u1 = 325
+        brake_u3 = 325
+
+     1
+
+****************************************
+ the model is fixed in 7iterations
+ the final value of the parameter is 1.6463
+*******************************************
+#############################
+time for model repair
+Elapsed time is 374.352919 seconds.
+
+START OPTIMIZATION METAHEURISTICS
+
+     TEST CORNERS
+
+ Running 80 corners
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+         1                        0.5               [+2.00000e+00]     (+2.00000e+00)
+         2                        1.1               [+1.00000e+00]     (+1.00000e+00)
+         3                        1.7               [+1.00000e+00]     (+1.00000e+00)
+         4                        2.2               [+2.00000e+00]     (+1.00000e+00)
+         5                        2.8               [+1.00000e+00]     (+1.00000e+00)
+         6                        3.3               [+2.00000e+00]     (+1.00000e+00)
+         7                        3.8               [+2.00000e+00]     (+1.00000e+00)
+         8                        4.4               [+2.00000e+00]     (+1.00000e+00)
+         9                        4.9               [+1.00000e+00]     (+1.00000e+00)
+        10                        5.5               [+2.00000e+00]     (+1.00000e+00)
+        11                        6.0               [+1.00000e+00]     (+1.00000e+00)
+        12                        6.6               [+1.00000e+00]     (+1.00000e+00)
+        13                        7.1               [+2.00000e+00]     (+1.00000e+00)
+        14                        7.7               [+1.00000e+00]     (+1.00000e+00)
+        15                        8.2               [+1.00000e+00]     (+1.00000e+00)
+        16                        8.8               [+2.00000e+00]     (+1.00000e+00)
+        17                        9.3               [+2.00000e+00]     (+1.00000e+00)
+        18                        9.9               [+2.00000e+00]     (+1.00000e+00)
+        19                       10.4               [+2.00000e+00]     (+1.00000e+00)
+        20                       11.0               [+1.00000e+00]     (+1.00000e+00)
+        21                       11.5               [+2.00000e+00]     (+1.00000e+00)
+        22                       12.0               [+2.00000e+00]     (+1.00000e+00)
+        23                       12.6               [+1.00000e+00]     (+1.00000e+00)
+        24                       13.2               [+2.00000e+00]     (+1.00000e+00)
+        25                       13.7               [+2.00000e+00]     (+1.00000e+00)
+        26                       14.3               [+1.00000e+00]     (+1.00000e+00)
+        27                       14.8               [+1.00000e+00]     (+1.00000e+00)
+        28                       15.4               [+2.00000e+00]     (+1.00000e+00)
+        29                       15.9               [+1.00000e+00]     (+1.00000e+00)
+        30                       16.4               [+2.00000e+00]     (+1.00000e+00)
+        31                       17.0               [+2.00000e+00]     (+1.00000e+00)
+        32                       17.5               [+1.00000e+00]     (+1.00000e+00)
+        33                       18.1               [+1.00000e+00]     (+1.00000e+00)
+        34                       18.6               [+2.00000e+00]     (+1.00000e+00)
+        35                       19.2               [+2.00000e+00]     (+1.00000e+00)
+        36                       19.7               [+2.00000e+00]     (+1.00000e+00)
+        37                       20.3               [+2.00000e+00]     (+1.00000e+00)
+        38                       20.8               [+1.00000e+00]     (+1.00000e+00)
+        39                       21.5               [+1.00000e+00]     (+1.00000e+00)
+        40                       22.0               [+2.00000e+00]     (+1.00000e+00)
+        41                       22.6               [+2.00000e+00]     (+1.00000e+00)
+        42                       23.1               [+2.00000e+00]     (+1.00000e+00)
+        43                       23.7               [+1.00000e+00]     (+1.00000e+00)
+        44                       24.2               [+1.00000e+00]     (+1.00000e+00)
+        45                       24.8               [+1.00000e+00]     (+1.00000e+00)
+        46                       25.3               [+2.00000e+00]     (+1.00000e+00)
+        47                       25.9               [+2.00000e+00]     (+1.00000e+00)
+        48                       26.4               [+2.00000e+00]     (+1.00000e+00)
+        49                       27.0               [+2.00000e+00]     (+1.00000e+00)
+        50                       27.5               [+2.00000e+00]     (+1.00000e+00)
+        51                       28.1               [+2.00000e+00]     (+1.00000e+00)
+        52                       28.6               [+2.00000e+00]     (+1.00000e+00)
+        53                       29.1               [+1.00000e+00]     (+1.00000e+00)
+        54                       29.7               [+2.00000e+00]     (+1.00000e+00)
+        55                       30.2               [+1.00000e+00]     (+1.00000e+00)
+        56                       30.8               [+2.00000e+00]     (+1.00000e+00)
+        57                       31.3               [+1.00000e+00]     (+1.00000e+00)
+        58                       31.9               [+2.00000e+00]     (+1.00000e+00)
+        59                       32.4               [+2.00000e+00]     (+1.00000e+00)
+        60                       33.0               [+2.00000e+00]     (+1.00000e+00)
+        61                       33.5               [+2.00000e+00]     (+1.00000e+00)
+        62                       34.0               [+2.00000e+00]     (+1.00000e+00)
+        63                       34.6               [+1.00000e+00]     (+1.00000e+00)
+        64                       35.2               [+1.00000e+00]     (+1.00000e+00)
+        65                       35.7               [+1.00000e+00]     (+1.00000e+00)
+        66                       36.3               [+1.00000e+00]     (+1.00000e+00)
+        67                       36.8               [+2.00000e+00]     (+1.00000e+00)
+        68                       37.3               [+2.00000e+00]     (+1.00000e+00)
+        69                       37.9               [+2.00000e+00]     (+1.00000e+00)
+        70                       38.4               [+1.00000e+00]     (+1.00000e+00)
+        71                       39.0               [+2.00000e+00]     (+1.00000e+00)
+        72                       39.5               [+1.00000e+00]     (+1.00000e+00)
+        73                       40.1               [+2.00000e+00]     (+1.00000e+00)
+        74                       40.7               [+2.00000e+00]     (+1.00000e+00)
+        75                       41.2               [+1.00000e+00]     (+1.00000e+00)
+        76                       41.8               [+1.00000e+00]     (+1.00000e+00)
+        77                       42.3               [+1.00000e+00]     (+1.00000e+00)
+        78                       42.9               [+2.00000e+00]     (+1.00000e+00)
+        79                       43.4               [+2.00000e+00]     (+1.00000e+00)
+        80                       44.0               [+2.00000e+00]     (+1.00000e+00)
+Best value found during corners phase: 2 with
+        dt_u0 = 0.1
+        dt_u1 = 0.1
+        dt_u2 = 0.1
+        dt_u3 = 0.1
+        throttle_u0 = 0
+        throttle_u2 = 0
+        brake_u1 = 0
+        brake_u3 = 0
+
+
+TEST QUASI-RANDOM SAMPLES
+
+
+++++++++++++++++++++++++++++++++++++++++++++
+Running 80 quasi-random samples with seed 1
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+        81                       44.5               [+2.00000e+00]     (+1.00000e+00)
+        82                       45.1               [+1.00000e+00]     (+1.00000e+00)
+        83                       45.6               [+1.00000e+00]     (+1.00000e+00)
+        84                       46.2               [+1.00000e+00]     (+1.00000e+00)
+        85                       46.7               [+1.00000e+00]     (+1.00000e+00)
+        86                       47.3               [+1.00000e+00]     (+1.00000e+00)
+        87                       47.8               [+1.00000e+00]     (+1.00000e+00)
+        88                       48.4               [+1.00000e+00]     (+1.00000e+00)
+        89                       48.9               [+1.00000e+00]     (+1.00000e+00)
+        90                       49.5               [+1.00000e+00]     (+1.00000e+00)
+        91                       50.0               [+1.00000e+00]     (+1.00000e+00)
+        92                       50.6               [+2.00000e+00]     (+1.00000e+00)
+        93                       51.1               [+2.00000e+00]     (+1.00000e+00)
+        94                       51.6               [+1.00000e+00]     (+1.00000e+00)
+        95                       52.2               [+2.00000e+00]     (+1.00000e+00)
+        96                       52.8               [+1.00000e+00]     (+1.00000e+00)
+        97                       53.3               [+1.00000e+00]     (+1.00000e+00)
+        98                       53.8               [+1.00000e+00]     (+1.00000e+00)
+        99                       54.4               [+1.00000e+00]     (+1.00000e+00)
+       100                       54.9               [+1.00000e+00]     (+1.00000e+00)
+       101                       55.5               [+1.00000e+00]     (+1.00000e+00)
+       102                       56.1               [+1.00000e+00]     (+1.00000e+00)
+       103                       56.6               [+1.00000e+00]     (+1.00000e+00)
+       104                       57.2               [+2.00000e+00]     (+1.00000e+00)
+       105                       57.7               [+2.00000e+00]     (+1.00000e+00)
+       106                       58.3               [+1.00000e+00]     (+1.00000e+00)
+       107                       58.8               [+2.00000e+00]     (+1.00000e+00)
+       108                       59.4               [+1.00000e+00]     (+1.00000e+00)
+       109                       59.9               [+1.00000e+00]     (+1.00000e+00)
+       110                       60.5               [+1.00000e+00]     (+1.00000e+00)
+       111                       61.0               [+1.00000e+00]     (+1.00000e+00)
+       112                       61.5               [+1.00000e+00]     (+1.00000e+00)
+       113                       62.1               [+1.00000e+00]     (+1.00000e+00)
+       114                       62.6               [+2.00000e+00]     (+1.00000e+00)
+       115                       63.2               [+1.00000e+00]     (+1.00000e+00)
+       116                       63.8               [+1.00000e+00]     (+1.00000e+00)
+       117                       64.3               [+1.00000e+00]     (+1.00000e+00)
+       118                       64.9               [+1.00000e+00]     (+1.00000e+00)
+       119                       65.4               [+2.00000e+00]     (+1.00000e+00)
+       120                       66.0               [+1.00000e+00]     (+1.00000e+00)
+       121                       66.5               [+1.00000e+00]     (+1.00000e+00)
+       122                       67.1               [+1.00000e+00]     (+1.00000e+00)
+       123                       67.6               [+1.00000e+00]     (+1.00000e+00)
+       124                       68.2               [+2.00000e+00]     (+1.00000e+00)
+       125                       68.7               [+1.00000e+00]     (+1.00000e+00)
+       126                       69.3               [+1.00000e+00]     (+1.00000e+00)
+       127                       69.8               [+1.00000e+00]     (+1.00000e+00)
+       128                       70.4               [+1.00000e+00]     (+1.00000e+00)
+       129                       70.9               [+1.00000e+00]     (+1.00000e+00)
+       130                       71.5               [+1.00000e+00]     (+1.00000e+00)
+       131                       72.0               [+2.00000e+00]     (+1.00000e+00)
+       132                       72.5               [+1.00000e+00]     (+1.00000e+00)
+       133                       73.1               [+1.00000e+00]     (+1.00000e+00)
+       134                       73.6               [+2.00000e+00]     (+1.00000e+00)
+       135                       74.2               [+2.00000e+00]     (+1.00000e+00)
+       136                       74.7               [+1.00000e+00]     (+1.00000e+00)
+       137                       75.3               [+1.00000e+00]     (+1.00000e+00)
+       138                       75.8               [+1.00000e+00]     (+1.00000e+00)
+       139                       76.4               [+2.00000e+00]     (+1.00000e+00)
+       140                       76.9               [+1.00000e+00]     (+1.00000e+00)
+       141                       77.5               [+1.00000e+00]     (+1.00000e+00)
+       142                       78.0               [+1.00000e+00]     (+1.00000e+00)
+       143                       78.6               [+1.00000e+00]     (+1.00000e+00)
+       144                       79.1               [+1.00000e+00]     (+1.00000e+00)
+       145                       79.7               [+2.00000e+00]     (+1.00000e+00)
+       146                       80.2               [+2.00000e+00]     (+1.00000e+00)
+       147                       80.8               [+2.00000e+00]     (+1.00000e+00)
+       148                       81.3               [+1.00000e+00]     (+1.00000e+00)
+       149                       81.9               [+1.00000e+00]     (+1.00000e+00)
+       150                       82.4               [+1.00000e+00]     (+1.00000e+00)
+       151                       83.0               [+1.00000e+00]     (+1.00000e+00)
+       152                       83.6               [+1.00000e+00]     (+1.00000e+00)
+       153                       84.1               [+1.00000e+00]     (+1.00000e+00)
+       154                       84.6               [+1.00000e+00]     (+1.00000e+00)
+       155                       85.2               [+1.00000e+00]     (+1.00000e+00)
+       156                       85.7               [+1.00000e+00]     (+1.00000e+00)
+       157                       86.3               [+2.00000e+00]     (+1.00000e+00)
+       158                       86.8               [+2.00000e+00]     (+1.00000e+00)
+       159                       87.4               [+2.00000e+00]     (+1.00000e+00)
+       160                       87.9               [+1.00000e+00]     (+1.00000e+00)
+Best value found during quasi-random phase: 1 with
+        dt_u0 = 7.525
+        dt_u1 = 1.2
+        dt_u2 = 6.04
+        dt_u3 = 4.34286
+        throttle_u0 = 27.2727
+        throttle_u2 = 23.0769
+        brake_u1 = 57.3529
+        brake_u3 = 51.3158
+
+
+RUN LOCAL OPTIMIZATION
+
+
+********************************************
+Starting Nelder Mead optimization from x0:
+        dt_u0 = 7.525
+        dt_u1 = 1.2
+        dt_u2 = 6.04
+        dt_u3 = 4.34286
+        throttle_u0 = 27.2727
+        throttle_u2 = 23.0769
+        brake_u1 = 57.3529
+        brake_u3 = 51.3158
+
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+       161                       88.5               [+1.00000e+00]     (+1.00000e+00)
+       162                       89.1               [+1.00000e+00]     (+1.00000e+00)
+       163                       89.6               [+1.00000e+00]     (+1.00000e+00)
+       164                       90.2               [+1.00000e+00]     (+1.00000e+00)
+       165                       90.8               [+1.00000e+00]     (+1.00000e+00)
+       166                       91.3               [+1.00000e+00]     (+1.00000e+00)
+       167                       91.9               [+1.00000e+00]     (+1.00000e+00)
+       168                       92.4               [+1.00000e+00]     (+1.00000e+00)
+       169                       93.0               [+1.00000e+00]     (+1.00000e+00)
+       170                       93.6               [+1.00000e+00]     (+1.00000e+00)
+       171                       94.1               [+1.00000e+00]     (+1.00000e+00)
+       172                       94.7               [+1.00000e+00]     (+1.00000e+00)
+       173                       95.2               [+1.00000e+00]     (+1.00000e+00)
+       174                       95.8               [+1.00000e+00]     (+1.00000e+00)
+       175                       96.4               [+1.00000e+00]     (+1.00000e+00)
+       176                       96.9               [+1.00000e+00]     (+1.00000e+00)
+       177                       97.5               [+1.00000e+00]     (+1.00000e+00)
+       178                       98.0               [+1.00000e+00]     (+1.00000e+00)
+       179                       98.6               [+1.00000e+00]     (+1.00000e+00)
+       180                       99.2               [+1.00000e+00]     (+1.00000e+00)
+       181                       99.7               [+1.00000e+00]     (+1.00000e+00)
+       182                      100.3               [+1.00000e+00]     (+1.00000e+00)
+       183                      100.9               [+1.00000e+00]     (+1.00000e+00)
+       184                      101.4               [+1.00000e+00]     (+1.00000e+00)
+       185                      102.0               [+1.00000e+00]     (+1.00000e+00)
+       186                      102.6               [+1.00000e+00]     (+1.00000e+00)
+       187                      103.1               [+1.00000e+00]     (+1.00000e+00)
+       188                      103.7               [+1.00000e+00]     (+1.00000e+00)
+       189                      104.2               [+1.00000e+00]     (+1.00000e+00)
+       190                      104.8               [+1.00000e+00]     (+1.00000e+00)
+       191                      105.4               [+1.00000e+00]     (+1.00000e+00)
+       192                      105.9               [+1.00000e+00]     (+1.00000e+00)
+       193                      106.5               [+1.00000e+00]     (+1.00000e+00)
+       194                      107.0               [+1.00000e+00]     (+1.00000e+00)
+       195                      107.6               [+1.00000e+00]     (+1.00000e+00)
+       196                      108.2               [+1.00000e+00]     (+1.00000e+00)
+       197                      108.8               [+1.00000e+00]     (+1.00000e+00)
+       198                      109.3               [+1.00000e+00]     (+1.00000e+00)
+       199                      109.9               [+1.00000e+00]     (+1.00000e+00)
+       200                      110.5               [+1.00000e+00]     (+1.00000e+00)
+       201                      111.0               [+1.00000e+00]     (+1.00000e+00)
+       202                      111.6               [+1.00000e+00]     (+1.00000e+00)
+       203                      112.2               [+1.00000e+00]     (+1.00000e+00)
+       204                      112.7               [+1.00000e+00]     (+1.00000e+00)
+       205                      113.3               [+1.00000e+00]     (+1.00000e+00)
+       206                      113.9               [+1.00000e+00]     (+1.00000e+00)
+       207                      114.5               [+1.00000e+00]     (+1.00000e+00)
+       208                      115.1               [+1.00000e+00]     (+1.00000e+00)
+       209                      115.6               [+1.00000e+00]     (+1.00000e+00)
+       210                      116.2               [+1.00000e+00]     (+1.00000e+00)
+       211                      116.7               [+1.00000e+00]     (+1.00000e+00)
+       212                      117.3               [+1.00000e+00]     (+1.00000e+00)
+       213                      117.9               [+1.00000e+00]     (+1.00000e+00)
+       214                      118.5               [+1.00000e+00]     (+1.00000e+00)
+       215                      119.0               [+1.00000e+00]     (+1.00000e+00)
+       216                      119.6               [+1.00000e+00]     (+1.00000e+00)
+       217                      120.1               [+1.00000e+00]     (+1.00000e+00)
+       218                      120.7               [+1.00000e+00]     (+1.00000e+00)
+       219                      121.3               [+1.00000e+00]     (+1.00000e+00)
+       220                      122.0               [+1.00000e+00]     (+1.00000e+00)
+       221                      122.5               [+1.00000e+00]     (+1.00000e+00)
+       222                      123.1               [+1.00000e+00]     (+1.00000e+00)
+       223                      123.7               [+1.00000e+00]     (+1.00000e+00)
+       224                      124.2               [+1.00000e+00]     (+1.00000e+00)
+       225                      124.8               [+1.00000e+00]     (+1.00000e+00)
+       226                      125.4               [+1.00000e+00]     (+1.00000e+00)
+       227                      125.9               [+1.00000e+00]     (+1.00000e+00)
+       228                      126.5               [+1.00000e+00]     (+1.00000e+00)
+       229                      127.1               [+1.00000e+00]     (+1.00000e+00)
+       230                      127.6               [+1.00000e+00]     (+1.00000e+00)
+       231                      128.2               [+1.00000e+00]     (+1.00000e+00)
+       232                      128.7               [+1.00000e+00]     (+1.00000e+00)
+       233                      129.3               [+1.00000e+00]     (+1.00000e+00)
+       234                      129.9               [+1.00000e+00]     (+1.00000e+00)
+       235                      130.4               [+1.00000e+00]     (+1.00000e+00)
+       236                      131.0               [+1.00000e+00]     (+1.00000e+00)
+       237                      131.6               [+1.00000e+00]     (+1.00000e+00)
+       238                      132.2               [+1.00000e+00]     (+1.00000e+00)
+       239                      132.7               [+1.00000e+00]     (+1.00000e+00)
+       240                      133.3               [+1.00000e+00]     (+1.00000e+00)
+       241                      133.9               [+1.00000e+00]     (+1.00000e+00)
+       242                      134.4               [+1.00000e+00]     (+1.00000e+00)
+       243                      135.0               [+1.00000e+00]     (+1.00000e+00)
+       244                      135.5               [+1.00000e+00]     (+1.00000e+00)
+       245                      136.1               [+1.00000e+00]     (+1.00000e+00)
+       246                      136.7               [+1.00000e+00]     (+1.00000e+00)
+       247                      137.2               [+1.00000e+00]     (+1.00000e+00)
+       248                      137.8               [+1.00000e+00]     (+1.00000e+00)
+       249                      138.4               [+1.00000e+00]     (+1.00000e+00)
+       250                      138.9               [+1.00000e+00]     (+1.00000e+00)
+       251                      139.5               [+1.00000e+00]     (+1.00000e+00)
+       252                      140.1               [+1.00000e+00]     (+1.00000e+00)
+       253                      140.7               [+1.00000e+00]     (+1.00000e+00)
+       254                      141.2               [+1.00000e+00]     (+1.00000e+00)
+       255                      141.8               [+1.00000e+00]     (+1.00000e+00)
+       256                      142.3               [+1.00000e+00]     (+1.00000e+00)
+       257                      142.9               [+1.00000e+00]     (+1.00000e+00)
+       258                      143.5               [+1.00000e+00]     (+1.00000e+00)
+       259                      144.0               [+1.00000e+00]     (+1.00000e+00)
+Best value found during local phase: 1 with
+        dt_u0 = 7.525
+        dt_u1 = 1.2
+        dt_u2 = 6.04
+        dt_u3 = 4.34286
+        throttle_u0 = 27.2727
+        throttle_u2 = 23.0769
+        brake_u1 = 57.3529
+        brake_u3 = 51.3158
+
+
+TEST QUASI-RANDOM SAMPLES
+
+
+++++++++++++++++++++++++++++++++++++++++++++
+Running 80 quasi-random samples with seed 81
+#calls (max:  300)        time spent (max: 180)     [current  obj]     (current best) 
+       260                      144.6               [+1.00000e+00]     (+1.00000e+00)
+       261                      145.2               [+1.00000e+00]     (+1.00000e+00)
+       262                      145.7               [+1.00000e+00]     (+1.00000e+00)
+       263                      146.3               [+1.00000e+00]     (+1.00000e+00)
+       264                      146.8               [+1.00000e+00]     (+1.00000e+00)
+       265                      147.4               [+1.00000e+00]     (+1.00000e+00)
+       266                      148.0               [+1.00000e+00]     (+1.00000e+00)
+       267                      148.5               [+1.00000e+00]     (+1.00000e+00)
+       268                      149.1               [+1.00000e+00]     (+1.00000e+00)
+       269                      149.6               [+1.00000e+00]     (+1.00000e+00)
+       270                      150.2               [+2.00000e+00]     (+1.00000e+00)
+       271                      150.7               [+1.00000e+00]     (+1.00000e+00)
+       272                      151.3               [+1.00000e+00]     (+1.00000e+00)
+       273                      151.9               [+1.00000e+00]     (+1.00000e+00)
+       274                      152.5               [+2.00000e+00]     (+1.00000e+00)
+       275                      153.2               [+1.00000e+00]     (+1.00000e+00)
+       276                      153.8               [+1.00000e+00]     (+1.00000e+00)
+       277                      154.5               [+1.00000e+00]     (+1.00000e+00)
+       278                      155.1               [+2.00000e+00]     (+1.00000e+00)
+       279                      155.7               [+1.00000e+00]     (+1.00000e+00)
+       280                      156.4               [+1.00000e+00]     (+1.00000e+00)
+       281                      157.0               [+1.00000e+00]     (+1.00000e+00)
+       282                      157.7               [+2.00000e+00]     (+1.00000e+00)
+       283                      158.3               [+1.00000e+00]     (+1.00000e+00)
+       284                      158.9               [+1.00000e+00]     (+1.00000e+00)
+       285                      159.5               [+1.00000e+00]     (+1.00000e+00)
+       286                      160.2               [+1.00000e+00]     (+1.00000e+00)
+       287                      160.8               [+1.00000e+00]     (+1.00000e+00)
+       288                      161.4               [+2.00000e+00]     (+1.00000e+00)
+       289                      162.1               [+1.00000e+00]     (+1.00000e+00)
+       290                      162.9               [+1.00000e+00]     (+1.00000e+00)
+       291                      163.6               [+1.00000e+00]     (+1.00000e+00)
+       292                      164.2               [+1.00000e+00]     (+1.00000e+00)
+       293                      164.8               [+1.00000e+00]     (+1.00000e+00)
+       294                      165.3               [+1.00000e+00]     (+1.00000e+00)
+       295                      165.9               [+1.00000e+00]     (+1.00000e+00)
+       296                      166.5               [+1.00000e+00]     (+1.00000e+00)
+       297                      167.1               [+1.00000e+00]     (+1.00000e+00)
+       298                      167.7               [+2.00000e+00]     (+1.00000e+00)
+       299                      168.2               [+2.00000e+00]     (+1.00000e+00)
+       300                      168.8               [+1.00000e+00]     (+1.00000e+00)
+
+END OPTIMIZATION METAHEURISTICS
+
+ Stopped after max_obj_eval was reached (maximum number of objective function evaluations).
+No falsifying trace found.
+
+ ---- Best value 1 found with
+        dt_u0 = 10
+        dt_u1 = 10
+        dt_u2 = 10
+        dt_u3 = 10
+        throttle_u0 = 100
+        throttle_u2 = 100
+        brake_u1 = 325
+        brake_u3 = 325
+
+fixed model

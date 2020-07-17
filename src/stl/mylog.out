@@ -1,0 +1,26 @@
+*************************
+select 1 for Automatic transmission
+select 2 for Abstract furl control
+select 3 for Neural Network based maglev
+select 4 for Anti Lock braking system
+select 5 for helicopter
+*******************************
+enter the model number4
+enter the specification number42
+---------------------------------------
+selected model is4
+---------------------------------------
+--------------------------------------
+selected specification is phi42
+---------------------------------------
+---------------------------------------
+flattening the modelabsbrake
+---------------------------------------
+{Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('expand_subsystem', '/home/nikhil/breach_master/Examples/EMSOFT2020/expand_subsystem.m', 117)" style="font-weight:bold">expand_subsystem</a> (<a href="matlab: opentoline('/home/nikhil/breach_master/Examples/EMSOFT2020/expand_subsystem.m',117,0)">line 117</a>)
+Invalid inputs specified for method 'get'
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('main_script', '/home/nikhil/breach_master/Examples/EMSOFT2020/main_script.m', 32)" style="font-weight:bold">main_script</a> (<a href="matlab: opentoline('/home/nikhil/breach_master/Examples/EMSOFT2020/main_script.m',32,0)">line 32</a>)
+expand_subsystem; % flattening script
+} 
+close all;
+main_script

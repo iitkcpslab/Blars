@@ -1,0 +1,64 @@
+# Automatic transmission specifications
+
+# speed and rpm are bounded 
+ param vmax=160, rpmmax = 4500
+ speed_bnded := speed[t] < vmax  
+  RPM_bnded := RPM[t] < rpmmax
+  phi_bnded := (alw (speed_bnded)) and (alw (RPM_bnded)) 
+
+# The speed is never below 30 while in gear3 
+  param v_low = 30
+  
+  speed_low                 :=   speed[t]< v_low 
+  gear3                     :=   gear[t] == 3
+  gear3_and_speed_low       :=  (gear3) and (speed_low)    
+  never_gear3_and_speed_low :=  alw (not (gear3_and_speed_low)) 
+
+# When shift in gear 1, stay in gear 1 for at least t1 seconds.
+param t1=2.5
+
+  gear1             :=   gear[t]==1  
+  shift1            :=   (not gear1) and ev_[0.01,.02](gear1)
+  stay1_for_t1      :=   (alw_[0, t1] gear1 )
+  alw_stay1_for_t1  :=   alw (shift1 => stay1_for_t1)
+
+# When shift in gear 2, stay in gear 2 for at least t1 seconds.
+param t1=1
+
+  gear2             :=   gear[t]==2  
+  shift2            :=   (not gear2) and ev_[0.01,.02](gear2)
+  stay2_for_t1      :=   ev_[0,0.04] (alw_[0, t1] gear2 )
+  alw_stay2_for_t1  :=   alw ( shift2 => stay2_for_t1)	
+    
+
+# Other formulas 
+param vmax=150, t1=1, rpm_min=4000, rpm_max = 5000
+
+  
+  phi_21 := alw( gear2 and (ev_[0.01,0.02] gear1) => alw_[0,2.5](not gear2))
+
+  phi_vmaxmin := (alw_[0, 25] (speed[t]<vmax)) and (alw_[25, 50] (speed[t] > vmin))
+  phi_brake := (ev_[0, 25] ((speed[t]>100) and (alw (speed[t] > vmin)))) or (alw (speed[t]<100))
+  phi_100 := not ( (ev_[0, t1] (speed[t]>100)) and (alw (RPM[t]< rpm_min)) )  
+  
+  param t1=2.5
+  
+  gear1 :=   gear[t]==1 
+  shiftn1 := (not gear1) and ev_[0.01,.02](gear1)
+  phi_return1 := alw (shiftn1 => (alw_[0,t1] gear1))
+
+  gear2 :=   gear[t]==2 
+  shiftn2 := (not gear2) and ev_[0.01,.02](gear2)
+  phi_return2 := alw (shiftn2 => (alw_[0,t1] gear2))
+
+  gear3 :=   gear[t]==3 
+  shiftn3 := (not gear3) and ev_[0.01,.02](gear3)
+  phi_return3 := alw (shiftn3 => (alw_[0,t1] gear3))
+
+  gear4 :=  gear[t]==4
+  shiftn4 := (not gear4) and ev_[0.01,.02](gear4)
+  phi_return4 := alw (shiftn4 => (alw_[0, t1] gear4))
+
+  phi_all_return := ((phi_return1) and (phi_return2) and (phi_return3) and (phi_return4))
+
+  #phi_at := not ( ev_[0,20](speed[t]>120) and (alw(RPM[t]<5000)))

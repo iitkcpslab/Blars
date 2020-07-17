@@ -1,0 +1,12 @@
+
+# check convergence of Vehicle speed and Wheel speed
+phi_stable :=  ev_[0,15] ( alw_[0,3] (abs(Vs[t]-Ww[t]) < 1 )) 
+
+
+# there is no locking while the vehicle is still moving
+
+phi_slp :=  alw_[0,10] ( (slp[t]<1) and (Ww[t]>0.1) ) 
+
+
+phi_abs_all := ((phi_slp) and (phi_stable))
+ 
