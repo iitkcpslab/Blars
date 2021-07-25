@@ -2,9 +2,6 @@
 **B**ug **L**ocalisation **A**nd **R**epair of **S**imulink models
   
   
-Authors : Nikhil Kumar Singh cniks117@gmail.com  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indranil Saha saha.indra@gmail.com  
-  
 *** Requirements ***  
 Matlab2017a  
 BREACH1.5.2  
@@ -25,3 +22,7 @@ src/ contains the source code of BLARS.
 examples/ contains the Simulink models used for experiments.   
 repaired_models/ directory will contain the recently repaired models.  
 utils/ folder contains some auxiliary scripts.    
+
+  
+Authors : Nikhil Kumar Singh nksingh@cse.iitk.ac.in  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Indranil Saha isaha@cse.iitk.ac.in  
